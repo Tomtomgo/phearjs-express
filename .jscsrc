@@ -1,0 +1,5 @@
+{
+	"preset": "crockford",
+	"disallowTrailingComma": null,
+  "requireMultipleVarDecl": null
+}
