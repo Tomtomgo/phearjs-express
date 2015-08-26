@@ -38,7 +38,8 @@ be served prerendered only if necessary.
 ## Bugs / contribute
 
 If something doesn't work as expected or breaks, please create an
-[issue](/issues). When you feel like fixing an issue or improving this
-middleware, feel free to open an issue and create a pull request!
+[issue](https://github.com/Tomtomgo/phearjs-express/issues). When you feel like
+fixing an issue or improving this middleware, feel free to open an issue and
+create a pull request!
 
 I've used the [JSCS](http://jscs.info/) linter, so for bonus points, lint :)
