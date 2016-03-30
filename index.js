@@ -6,8 +6,10 @@
     var url = require('url');
 
     function is_robot(user_agent) {
-        // Check for the simple 'bot' string.
-        return user_agent.toLowerCase().indexOf('bot') > -1;
+        var bots_list = [/baiduspider/i, /facebookexternalhit/i, /embedly/i, /quora/i, /link/i, /preview/i, /outbrain/i, /pinterest/i, /vkShare/i, /W3C_Validator/i];
+        // Check for the simple 'bot' string or from the list of bots from an array.
+        // Some bots from several services do not have the word bot in them.
+        return user_agent.toLowerCase().indexOf('bot') > -1 || bots_list.some(function (bot) { return bot.test(user_agent); });
     }
 
     function is_phear(user_agent, phear_agent_identifier) {
